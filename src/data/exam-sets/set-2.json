@@ -1,0 +1,1162 @@
+[
+  {
+    "id": "set2-q01",
+    "topicId": 1,
+    "topicName": "Konsep dan Proses Pengurusan",
+    "difficulty": "easy",
+    "cognitiveLevel": "recall",
+    "stem": "Siapakah yang dianggap bapa sains pengurusan moden?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Frederick Winslow Taylor"
+      },
+      {
+        "id": "B",
+        "text": "Henri Fayol"
+      },
+      {
+        "id": "C",
+        "text": "Peter Drucker"
+      },
+      {
+        "id": "D",
+        "text": "Mary Parker Follett"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Taylor dikenali sebagai bapa sains pengurusan melalui teori pengurusan saintifik.",
+    "moduleRef": "Bab 1"
+  },
+  {
+    "id": "set2-q02",
+    "topicId": 1,
+    "topicName": "Konsep dan Proses Pengurusan",
+    "difficulty": "easy",
+    "cognitiveLevel": "understanding",
+    "stem": "Fungsi mengawal (controlling) dalam pengurusan melibatkan:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Memantau prestasi dan membuat pembetulan"
+      },
+      {
+        "id": "B",
+        "text": "Merekrut staf baharu"
+      },
+      {
+        "id": "C",
+        "text": "Menyediakan jadual cuti"
+      },
+      {
+        "id": "D",
+        "text": "Mengadakan hari sukan"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Fungsi mengawal merangkumi pemantauan dan tindakan pembetulan.",
+    "moduleRef": "Bab 1"
+  },
+  {
+    "id": "set2-q03",
+    "topicId": 1,
+    "topicName": "Konsep dan Proses Pengurusan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "application",
+    "stem": "GPK menyemak laporan kehadiran murid bulanan dan membandingkan dengan sasaran. Ini contoh fungsi:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mengawal"
+      },
+      {
+        "id": "B",
+        "text": "Merancang"
+      },
+      {
+        "id": "C",
+        "text": "Mengorganisasi"
+      },
+      {
+        "id": "D",
+        "text": "Memimpin"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Pemantauan prestasi berbanding standard adalah aktiviti kawalan.",
+    "moduleRef": "Bab 1"
+  },
+  {
+    "id": "set2-q04",
+    "topicId": 1,
+    "topicName": "Konsep dan Proses Pengurusan",
+    "difficulty": "hard",
+    "cognitiveLevel": "analysis",
+    "stem": "Prinsip 'unity of command' Fayol bermaksud setiap pekerja harus:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menerima arahan daripada seorang ketua sahaja"
+      },
+      {
+        "id": "B",
+        "text": "Memimpin semua rakan sekerja"
+      },
+      {
+        "id": "C",
+        "text": "Membuat keputusan sendiri tanpa rujukan"
+      },
+      {
+        "id": "D",
+        "text": "Bertanggungjawab kepada banyak ketua serentak"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Prinsip perintah tunggal mengelakkan kekeliruan arahan.",
+    "moduleRef": "Bab 1"
+  },
+  {
+    "id": "set2-q05",
+    "topicId": 2,
+    "topicName": "Fungsi Pengurusan dan Kepimpinan",
+    "difficulty": "easy",
+    "cognitiveLevel": "recall",
+    "stem": "Prinsip Fayol 'scalar chain' merujuk kepada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rantaian autoriti dari atas ke bawah"
+      },
+      {
+        "id": "B",
+        "text": "Rantaian bekalan sekolah"
+      },
+      {
+        "id": "C",
+        "text": "Susunan meja dalam bilik darjah"
+      },
+      {
+        "id": "D",
+        "text": "Urutan subjek dalam jadual"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Scalar chain adalah hierarki autoriti dalam organisasi.",
+    "moduleRef": "Bab 2"
+  },
+  {
+    "id": "set2-q06",
+    "topicId": 2,
+    "topicName": "Fungsi Pengurusan dan Kepimpinan",
+    "difficulty": "easy",
+    "cognitiveLevel": "understanding",
+    "stem": "Gaya kepimpinan laissez-faire dicirikan oleh:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kebebasan tinggi kepada pengikut membuat keputusan"
+      },
+      {
+        "id": "B",
+        "text": "Kawalan ketat oleh pemimpin"
+      },
+      {
+        "id": "C",
+        "text": "Ganjaran dan hukuman berstruktur"
+      },
+      {
+        "id": "D",
+        "text": "Kepimpinan berdasarkan ketakutan"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Laissez-faire memberi autonomi tinggi kepada ahli organisasi.",
+    "moduleRef": "Bab 2"
+  },
+  {
+    "id": "set2-q07",
+    "topicId": 2,
+    "topicName": "Fungsi Pengurusan dan Kepimpinan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "application",
+    "stem": "Guru besar menggunakan sijil penghargaan untuk guru berprestasi. Ini selaras dengan:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kepimpinan transaksional"
+      },
+      {
+        "id": "B",
+        "text": "Kepimpinan transformasional"
+      },
+      {
+        "id": "C",
+        "text": "Kepimpinan karismatik"
+      },
+      {
+        "id": "D",
+        "text": "Kepimpinan biokratik"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Sistem ganjaran adalah ciri kepimpinan transaksional.",
+    "moduleRef": "Bab 2"
+  },
+  {
+    "id": "set2-q08",
+    "topicId": 2,
+    "topicName": "Fungsi Pengurusan dan Kepimpinan",
+    "difficulty": "hard",
+    "cognitiveLevel": "analysis",
+    "stem": "Mengapakah kepimpinan transformasional dianggap sesuai untuk pengetua sekolah moden?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mampu menginspirasi perubahan dan membangunkan potensi warga sekolah"
+      },
+      {
+        "id": "B",
+        "text": "Kerana ia paling mudah dilaksanakan"
+      },
+      {
+        "id": "C",
+        "text": "Kerana ia tidak memerlukan visi"
+      },
+      {
+        "id": "D",
+        "text": "Kerana ia mengabaikan matlamat organisasi"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Kepimpinan transformasional sesuai untuk konteks perubahan dan pembangunan manusia.",
+    "moduleRef": "Bab 2"
+  },
+  {
+    "id": "set2-q09",
+    "topicId": 3,
+    "topicName": "Perancangan Pendidikan",
+    "difficulty": "easy",
+    "cognitiveLevel": "recall",
+    "stem": "Perancangan taktikal dalam sekolah biasanya merangkumi tempoh:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 hingga 2 tahun"
+      },
+      {
+        "id": "B",
+        "text": "10 tahun"
+      },
+      {
+        "id": "C",
+        "text": "1 minggu"
+      },
+      {
+        "id": "D",
+        "text": "20 tahun"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Perancangan taktikal adalah perancangan sederhana, biasanya 1-2 tahun.",
+    "moduleRef": "Bab 3"
+  },
+  {
+    "id": "set2-q10",
+    "topicId": 3,
+    "topicName": "Perancangan Pendidikan",
+    "difficulty": "easy",
+    "cognitiveLevel": "understanding",
+    "stem": "Matlamat SMART dalam perancangan bermaksud matlamat harus:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Spesifik, boleh diukur, boleh dicapai, relevan, berjangka masa"
+      },
+      {
+        "id": "B",
+        "text": "Sederhana, mudah, automatik, ringkas, tetap"
+      },
+      {
+        "id": "C",
+        "text": "Strategik, mantap, agresif, radikal, teguh"
+      },
+      {
+        "id": "D",
+        "text": "Sistematik, mantap, analitik, rasional, teliti"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "SMART adalah kriteria matlamat yang jelas dan boleh dicapai.",
+    "moduleRef": "Bab 3"
+  },
+  {
+    "id": "set2-q11",
+    "topicId": 3,
+    "topicName": "Perancangan Pendidikan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "application",
+    "stem": "Dalam analisis SWOT sekolah, 'peluang' merujuk kepada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Faktor luaran positif yang boleh dimanfaatkan"
+      },
+      {
+        "id": "B",
+        "text": "Kelemahan dalaman sekolah"
+      },
+      {
+        "id": "C",
+        "text": "Kekuatan dalaman guru"
+      },
+      {
+        "id": "D",
+        "text": "Ancaman daripada pesaing"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Peluang (Opportunities) adalah faktor luaran yang menguntungkan.",
+    "moduleRef": "Bab 3"
+  },
+  {
+    "id": "set2-q12",
+    "topicId": 3,
+    "topicName": "Perancangan Pendidikan",
+    "difficulty": "hard",
+    "cognitiveLevel": "analysis",
+    "stem": "Mengapakah penyertaan guru dalam perancangan sekolah penting?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Meningkatkan komitmen dan pemilikan terhadap pelaksanaan"
+      },
+      {
+        "id": "B",
+        "text": "Memperlambatkan proses tanpa manfaat"
+      },
+      {
+        "id": "C",
+        "text": "Menggantikan peranan pengetua"
+      },
+      {
+        "id": "D",
+        "text": "Menghapuskan tanggungjawab pentadbiran"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Penyertaan meningkatkan komitmen dan keberkesanan pelaksanaan.",
+    "moduleRef": "Bab 3"
+  },
+  {
+    "id": "set2-q13",
+    "topicId": 4,
+    "topicName": "Belanjawan",
+    "difficulty": "easy",
+    "cognitiveLevel": "recall",
+    "stem": "Belanjawan pembangunan (development budget) digunakan untuk:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Projek dan program jangka panjang sekolah"
+      },
+      {
+        "id": "B",
+        "text": "Gaji bulanan guru"
+      },
+      {
+        "id": "C",
+        "text": "Bil utiliti harian"
+      },
+      {
+        "id": "D",
+        "text": "Kehadiran murid"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Belanjawan pembangunan membiayai projek dan program jangka panjang.",
+    "moduleRef": "Bab 4"
+  },
+  {
+    "id": "set2-q14",
+    "topicId": 4,
+    "topicName": "Belanjawan",
+    "difficulty": "easy",
+    "cognitiveLevel": "understanding",
+    "stem": "Belanjawan berimbang (balanced budget) bermaksud:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Perbelanjaan sama dengan hasil/pendapatan"
+      },
+      {
+        "id": "B",
+        "text": "Perbelanjaan melebihi hasil"
+      },
+      {
+        "id": "C",
+        "text": "Hasil melebihi perbelanjaan dengan ketara"
+      },
+      {
+        "id": "D",
+        "text": "Tiada perbelanjaan langsung"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Belanjawan berimbang apabila jumlah perbelanjaan sama dengan hasil.",
+    "moduleRef": "Bab 4"
+  },
+  {
+    "id": "set2-q15",
+    "topicId": 4,
+    "topicName": "Belanjawan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "application",
+    "stem": "Jabatan meminta semua sekolah menambah 5% perbelanjaan tahun lepas tanpa semakan item. Ini contoh:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Belanjawan inkremental"
+      },
+      {
+        "id": "B",
+        "text": "Belanjawan sifar"
+      },
+      {
+        "id": "C",
+        "text": "Belanjawan kecemasan"
+      },
+      {
+        "id": "D",
+        "text": "Belanjawan projek"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Penambahan peratusan ke atas belanjawan lalu adalah ciri belanjawan inkremental.",
+    "moduleRef": "Bab 4"
+  },
+  {
+    "id": "set2-q16",
+    "topicId": 4,
+    "topicName": "Belanjawan",
+    "difficulty": "hard",
+    "cognitiveLevel": "analysis",
+    "stem": "Kepentingan kawalan belanjawan dalam sekolah:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Memastikan perbelanjaan selaras dengan peruntukan yang diluluskan"
+      },
+      {
+        "id": "B",
+        "text": "Menghalang semua perbelanjaan"
+      },
+      {
+        "id": "C",
+        "text": "Menggantikan fungsi perancangan"
+      },
+      {
+        "id": "D",
+        "text": "Membenarkan perbelanjaan tanpa had"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Kawalan belanjawan memastikan penggunaan kewangan bertanggungjawab.",
+    "moduleRef": "Bab 4"
+  },
+  {
+    "id": "set2-q17",
+    "topicId": 5,
+    "topicName": "Sekolah Sebagai Tempat Pengajaran dan Pembelajaran",
+    "difficulty": "easy",
+    "cognitiveLevel": "recall",
+    "stem": "Teori kognitivisme dalam pembelajaran menekankan:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proses pemprosesan maklumat dalam minda pelajar"
+      },
+      {
+        "id": "B",
+        "text": "Perubahan tingkah laku melalui ganjaran"
+      },
+      {
+        "id": "C",
+        "text": "Pembelajaran tanpa penglibatan aktif"
+      },
+      {
+        "id": "D",
+        "text": "Hafalan tanpa pemahaman"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Kognitivisme fokus pada proses mental dalam pembelajaran.",
+    "moduleRef": "Bab 5"
+  },
+  {
+    "id": "set2-q18",
+    "topicId": 5,
+    "topicName": "Sekolah Sebagai Tempat Pengajaran dan Pembelajaran",
+    "difficulty": "easy",
+    "cognitiveLevel": "understanding",
+    "stem": "Pembelajaran sosial Bandura menekankan:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pembelajaran melalui pemerhatian dan peniruan model"
+      },
+      {
+        "id": "B",
+        "text": "Pembelajaran melalui hukuman fizikal"
+      },
+      {
+        "id": "C",
+        "text": "Pembelajaran tanpa interaksi sosial"
+      },
+      {
+        "id": "D",
+        "text": "Pembelajaran hanya melalui buku teks"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Teori Bandura menekankan pembelajaran melalui pemerhatian.",
+    "moduleRef": "Bab 5"
+  },
+  {
+    "id": "set2-q19",
+    "topicId": 5,
+    "topicName": "Sekolah Sebagai Tempat Pengajaran dan Pembelajaran",
+    "difficulty": "moderate",
+    "cognitiveLevel": "application",
+    "stem": "Guru menggunakan kad imbas dan ganjaran untuk mengukuhkan tingkah laku baik. Pendekatan ini berasaskan:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Behaviorisme"
+      },
+      {
+        "id": "B",
+        "text": "Konstruktivisme"
+      },
+      {
+        "id": "C",
+        "text": "Humanisme radikal"
+      },
+      {
+        "id": "D",
+        "text": "Teori kritikal"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Pengukuhan tingkah laku adalah prinsip utama behaviorisme.",
+    "moduleRef": "Bab 5"
+  },
+  {
+    "id": "set2-q20",
+    "topicId": 5,
+    "topicName": "Sekolah Sebagai Tempat Pengajaran dan Pembelajaran",
+    "difficulty": "hard",
+    "cognitiveLevel": "analysis",
+    "stem": "Mengapakah sekolah perlu menyediakan persekitaran pembelajaran yang selamat dan menyokong?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Membolehkan pelajar mengambil risiko kognitif dan membina pengetahuan"
+      },
+      {
+        "id": "B",
+        "text": "Supaya murid tidak perlu belajar"
+      },
+      {
+        "id": "C",
+        "text": "Agar guru kurang bertanggungjawab"
+      },
+      {
+        "id": "D",
+        "text": "Kerana ia tidak memberi kesan kepada pembelajaran"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Persekitaran selamat menyokong pembelajaran aktif dan konstruktif.",
+    "moduleRef": "Bab 5"
+  },
+  {
+    "id": "set2-q21",
+    "topicId": 6,
+    "topicName": "Budaya dan Iklim Organisasi",
+    "difficulty": "easy",
+    "cognitiveLevel": "recall",
+    "stem": "Norma organisasi dalam sekolah merujuk kepada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tingkah laku yang diterima dan dijangka dalam organisasi"
+      },
+      {
+        "id": "B",
+        "text": "Undang-undang negara"
+      },
+      {
+        "id": "C",
+        "text": "Kurikulum KPM"
+      },
+      {
+        "id": "D",
+        "text": "Jadual peperiksaan"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Norma adalah piawaian tingkah laku yang diterima dalam organisasi.",
+    "moduleRef": "Bab 6"
+  },
+  {
+    "id": "set2-q22",
+    "topicId": 6,
+    "topicName": "Budaya dan Iklim Organisasi",
+    "difficulty": "easy",
+    "cognitiveLevel": "understanding",
+    "stem": "Budaya sekolah yang kolaboratif dicirikan oleh:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kerjasama dan perkongsian antara warga sekolah"
+      },
+      {
+        "id": "B",
+        "text": "Persaingan sengit antara guru"
+      },
+      {
+        "id": "C",
+        "text": "Isolasi individu"
+      },
+      {
+        "id": "D",
+        "text": "Hierarki tegar tanpa komunikasi"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Budaya kolaboratif menekankan kerjasama dan perkongsian.",
+    "moduleRef": "Bab 6"
+  },
+  {
+    "id": "set2-q23",
+    "topicId": 6,
+    "topicName": "Budaya dan Iklim Organisasi",
+    "difficulty": "moderate",
+    "cognitiveLevel": "application",
+    "stem": "Pengetua mengadakan program team building untuk staf. Tujuannya:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menguatkan hubungan dan budaya positif"
+      },
+      {
+        "id": "B",
+        "text": "Mengisi masa lapang sahaja"
+      },
+      {
+        "id": "C",
+        "text": "Menggantikan mesyuarat penting"
+      },
+      {
+        "id": "D",
+        "text": "Menghukum guru lemah"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Team building membina hubungan dan mengukuhkan budaya organisasi.",
+    "moduleRef": "Bab 6"
+  },
+  {
+    "id": "set2-q24",
+    "topicId": 6,
+    "topicName": "Budaya dan Iklim Organisasi",
+    "difficulty": "hard",
+    "cognitiveLevel": "analysis",
+    "stem": "Bagaimanakah pemimpin sekolah boleh mengubah budaya organisasi?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Melalui visi, teladan, dasar dan amalan konsisten"
+      },
+      {
+        "id": "B",
+        "text": "Dengan arahan sekali tanpa susulan"
+      },
+      {
+        "id": "C",
+        "text": "Dengan mengabaikan nilai sedia ada"
+      },
+      {
+        "id": "D",
+        "text": "Dengan menukar semua staf serentak"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Perubahan budaya memerlukan usaha berterusan dan teladan kepimpinan.",
+    "moduleRef": "Bab 6"
+  },
+  {
+    "id": "set2-q25",
+    "topicId": 7,
+    "topicName": "Komunikasi di Sekolah",
+    "difficulty": "easy",
+    "cognitiveLevel": "recall",
+    "stem": "Komunikasi dua hala (two-way communication) melibatkan:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maklum balas daripada penerima kepada pengirim"
+      },
+      {
+        "id": "B",
+        "text": "Siaran tanpa respons"
+      },
+      {
+        "id": "C",
+        "text": "Komunikasi sehala sahaja"
+      },
+      {
+        "id": "D",
+        "text": "Penyampaian melalui speaker"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Komunikasi dua hala merangkumi maklum balas interaktif.",
+    "moduleRef": "Bab 7"
+  },
+  {
+    "id": "set2-q26",
+    "topicId": 7,
+    "topicName": "Komunikasi di Sekolah",
+    "difficulty": "easy",
+    "cognitiveLevel": "understanding",
+    "stem": "Komunikasi tidak formal di sekolah berlaku melalui:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Perbualan santai dan rangkaian sosial warga sekolah"
+      },
+      {
+        "id": "B",
+        "text": "Surat pekeliling rasmi"
+      },
+      {
+        "id": "C",
+        "text": "Laporan tahunan"
+      },
+      {
+        "id": "D",
+        "text": "Minit mesyuarat PIBG"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Komunikasi tidak formal berlaku di luar saluran rasmi organisasi.",
+    "moduleRef": "Bab 7"
+  },
+  {
+    "id": "set2-q27",
+    "topicId": 7,
+    "topicName": "Komunikasi di Sekolah",
+    "difficulty": "moderate",
+    "cognitiveLevel": "application",
+    "stem": "Guru tidak memahami arahan baharu kerana istilah teknikal digunakan. Halangan ini dikenali sebagai:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Halangan semantik"
+      },
+      {
+        "id": "B",
+        "text": "Halangan fizikal"
+      },
+      {
+        "id": "C",
+        "text": "Halangan psikologi"
+      },
+      {
+        "id": "D",
+        "text": "Halangan organisasi"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Halangan semantik berkaitan bahasa, jargon dan makna perkataan.",
+    "moduleRef": "Bab 7"
+  },
+  {
+    "id": "set2-q28",
+    "topicId": 7,
+    "topicName": "Komunikasi di Sekolah",
+    "difficulty": "hard",
+    "cognitiveLevel": "analysis",
+    "stem": "Kepentingan mendengar aktif dalam komunikasi sekolah:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Memastikan mesej difahami dan mengurangkan salah faham"
+      },
+      {
+        "id": "B",
+        "text": "Membenarkan pemimpin mendominasi perbualan"
+      },
+      {
+        "id": "C",
+        "text": "Mengelakkan maklum balas"
+      },
+      {
+        "id": "D",
+        "text": "Mempercepatkan tamat mesyuarat tanpa kefahaman"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Mendengar aktif membantu pemahaman bersama dan hubungan positif.",
+    "moduleRef": "Bab 7"
+  },
+  {
+    "id": "set2-q29",
+    "topicId": 8,
+    "topicName": "Pengurusan Bilik Darjah",
+    "difficulty": "easy",
+    "cognitiveLevel": "recall",
+    "stem": "Ruang fizikal bilik darjah yang teratur menyokong:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pengurusan bilik darjah yang berkesan"
+      },
+      {
+        "id": "B",
+        "text": "Tingkah laku tidak terkawal"
+      },
+      {
+        "id": "C",
+        "text": "Pengabaian peraturan"
+      },
+      {
+        "id": "D",
+        "text": "Kekacauan dalam PdP"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Persekitaran fizikal teratur membantu pengurusan kelas.",
+    "moduleRef": "Bab 8"
+  },
+  {
+    "id": "set2-q30",
+    "topicId": 8,
+    "topicName": "Pengurusan Bilik Darjah",
+    "difficulty": "easy",
+    "cognitiveLevel": "understanding",
+    "stem": "Rutin harian dalam bilik darjah berfungsi untuk:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Memberi struktur dan jangkaan kepada murid"
+      },
+      {
+        "id": "B",
+        "text": "Mengisi masa tanpa tujuan"
+      },
+      {
+        "id": "C",
+        "text": "Mengelakkan murid bertanya soalan"
+      },
+      {
+        "id": "D",
+        "text": "Menghapuskan aktiviti pembelajaran"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Rutin memberi struktur dan mengurangkan ketidakpastian.",
+    "moduleRef": "Bab 8"
+  },
+  {
+    "id": "set2-q31",
+    "topicId": 8,
+    "topicName": "Pengurusan Bilik Darjah",
+    "difficulty": "moderate",
+    "cognitiveLevel": "application",
+    "stem": "Guru menggunakan teknik 'withitness' iaitu sedar sepenuhnya terhadap apa berlaku di kelas. Ini membantu:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mengesan dan mencegah masalah disiplin awal"
+      },
+      {
+        "id": "B",
+        "text": "Mengabaikan tingkah laku murid"
+      },
+      {
+        "id": "C",
+        "text": "Mengurangkan interaksi guru-murid"
+      },
+      {
+        "id": "D",
+        "text": "Menghapuskan peraturan kelas"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Withitness membolehkan guru bertindak proaktif terhadap isu disiplin.",
+    "moduleRef": "Bab 8"
+  },
+  {
+    "id": "set2-q32",
+    "topicId": 8,
+    "topicName": "Pengurusan Bilik Darjah",
+    "difficulty": "hard",
+    "cognitiveLevel": "analysis",
+    "stem": "Mengapakah hubungan positif guru-murid penting dalam pengurusan bilik darjah?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Meningkatkan kerjasama dan mengurangkan tingkah laku bermasalah"
+      },
+      {
+        "id": "B",
+        "text": "Kerana guru tidak perlu mengajar"
+      },
+      {
+        "id": "C",
+        "text": "Supaya murid tidak perlu ikut peraturan"
+      },
+      {
+        "id": "D",
+        "text": "Agar guru boleh mengabaikan murid bermasalah"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Hubungan positif asas kepada pengurusan kelas berkesan.",
+    "moduleRef": "Bab 8"
+  },
+  {
+    "id": "set2-q33",
+    "topicId": 9,
+    "topicName": "Pengurusan Kualiti dalam Pendidikan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "understanding",
+    "stem": "Kitaran PDCA dalam pengurusan kualiti bermaksud:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Plan, Do, Check, Act (Rancang, Laksana, Semak, Tindak)"
+      },
+      {
+        "id": "B",
+        "text": "Prepare, Deliver, Complete, Assess"
+      },
+      {
+        "id": "C",
+        "text": "Plan, Direct, Control, Audit"
+      },
+      {
+        "id": "D",
+        "text": "Program, Design, Create, Apply"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "PDCA adalah kitaran penambahbaikan berterusan dalam TQM.",
+    "moduleRef": "Bab 9"
+  },
+  {
+    "id": "set2-q34",
+    "topicId": 9,
+    "topicName": "Pengurusan Kualiti dalam Pendidikan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "application",
+    "stem": "Sekolah menggunakan data kehadiran dan pencapaian untuk menilai program intervensi. Ini contoh:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Penggunaan data dalam pengurusan kualiti"
+      },
+      {
+        "id": "B",
+        "text": "Kawalan kewangan sahaja"
+      },
+      {
+        "id": "C",
+        "text": "Audit kewangan"
+      },
+      {
+        "id": "D",
+        "text": "Perancangan tanpa penilaian"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Keputusan berasaskan data adalah amalan pengurusan kualiti.",
+    "moduleRef": "Bab 9"
+  },
+  {
+    "id": "set2-q35",
+    "topicId": 9,
+    "topicName": "Pengurusan Kualiti dalam Pendidikan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "analysis",
+    "stem": "Standard Kualiti Sekolah Malaysia bertujuan:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menyediakan rujukan penilaian kualiti sekolah"
+      },
+      {
+        "id": "B",
+        "text": "Menghapuskan autonomi sekolah"
+      },
+      {
+        "id": "C",
+        "text": "Menggantikan guru dengan mesin"
+      },
+      {
+        "id": "D",
+        "text": "Mengurangkan tanggungjawab pengetua"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Standard kualiti menyediakan kerangka penilaian dan penambahbaikan.",
+    "moduleRef": "Bab 9"
+  },
+  {
+    "id": "set2-q36",
+    "topicId": 9,
+    "topicName": "Pengurusan Kualiti dalam Pendidikan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "problem-solving",
+    "stem": "Sekolah gagal mencapai sasaran literasi. Langkah TQM seterusnya:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kaji semula strategi dan laksanakan penambahbaikan berterusan"
+      },
+      {
+        "id": "B",
+        "text": "Abaikan sasaran"
+      },
+      {
+        "id": "C",
+        "text": "Salahkan murid semata-mata"
+      },
+      {
+        "id": "D",
+        "text": "Hentikan program literasi"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "TQM memerlukan semakan dan penambahbaikan berterusan.",
+    "moduleRef": "Bab 9"
+  },
+  {
+    "id": "set2-q37",
+    "topicId": 10,
+    "topicName": "Sekolah dan Masa Depan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "understanding",
+    "stem": "Pembelajaran sepanjang hayat (lifelong learning) dalam konteks sekolah bermaksud:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Murid dan warga sekolah terus belajar sepanjang masa"
+      },
+      {
+        "id": "B",
+        "text": "Belajar hanya semasa persekolahan"
+      },
+      {
+        "id": "C",
+        "text": "Guru tidak perlu latihan selepas tamat pengajian"
+      },
+      {
+        "id": "D",
+        "text": "Pembelajaran berhenti selepas SPM"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Pembelajaran sepanjang hayat adalah budaya belajar berterusan.",
+    "moduleRef": "Bab 10"
+  },
+  {
+    "id": "set2-q38",
+    "topicId": 10,
+    "topicName": "Sekolah dan Masa Depan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "application",
+    "stem": "Sekolah mengadopsi platform pembelajaran dalam talian. Ini menyokong:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pembelajaran fleksibel dan berterusan"
+      },
+      {
+        "id": "B",
+        "text": "Penggantian guru sepenuhnya"
+      },
+      {
+        "id": "C",
+        "text": "Penghapusan interaksi manusia"
+      },
+      {
+        "id": "D",
+        "text": "Pembelajaran tanpa kurikulum"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Teknologi menyokong pembelajaran fleksibel dan akses luas.",
+    "moduleRef": "Bab 10"
+  },
+  {
+    "id": "set2-q39",
+    "topicId": 10,
+    "topicName": "Sekolah dan Masa Depan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "analysis",
+    "stem": "Isu kelestarian alam sekitar dalam pendidikan masa depan memerlukan sekolah:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mengintegrasikan pendidikan alam sekitar dalam kurikulum"
+      },
+      {
+        "id": "B",
+        "text": "Mengabaikan isu alam sekitar"
+      },
+      {
+        "id": "C",
+        "text": "Mengurangkan aktiviti luar"
+      },
+      {
+        "id": "D",
+        "text": "Menghapuskan subjek sains"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Pendidikan alam sekitar penting untuk masa depan lestari.",
+    "moduleRef": "Bab 10"
+  },
+  {
+    "id": "set2-q40",
+    "topicId": 10,
+    "topicName": "Sekolah dan Masa Depan",
+    "difficulty": "moderate",
+    "cognitiveLevel": "problem-solving",
+    "stem": "Sekolah perlu melibatkan komuniti tempatan dalam perancangan program. Tujuannya:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Memastikan sekolah relevan dengan keperluan masyarakat"
+      },
+      {
+        "id": "B",
+        "text": "Mengurangkan tanggungjawab sekolah"
+      },
+      {
+        "id": "C",
+        "text": "Menggantikan peranan guru"
+      },
+      {
+        "id": "D",
+        "text": "Menghapuskan kurikulum kebangsaan"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Penglibatan komuniti meningkatkan relevansi dan sokongan sekolah.",
+    "moduleRef": "Bab 10"
+  }
+]
