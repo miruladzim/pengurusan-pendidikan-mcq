@@ -1,5 +1,6 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 import type { ExamMode } from "../types/exam";
+import { BackHomeLink } from "../components/BackHomeLink";
 import { getExamSet } from "../data/examSets";
 import { QUESTIONS_PER_SET } from "../data/topics";
 
@@ -16,6 +17,9 @@ export function ExamIntroPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-10">
+      <div className="mb-4">
+        <BackHomeLink />
+      </div>
       <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
         <p className="text-sm font-semibold text-blue-600">Set Peperiksaan {parsedSetId}</p>
         <h1 className="mt-2 text-3xl font-bold text-slate-900">

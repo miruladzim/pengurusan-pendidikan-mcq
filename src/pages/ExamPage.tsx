@@ -16,6 +16,7 @@ export function ExamPage() {
   const parsedSetId = Number(setId);
   const questions = useMemo(() => getExamSet(parsedSetId), [parsedSetId]);
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
+  const [showExitConfirm, setShowExitConfirm] = useState(false);
   const finishedRef = useRef(false);
 
   const {
@@ -26,6 +27,7 @@ export function ExamPage() {
     nextQuestion,
     previousQuestion,
     markSubmitted,
+    clearSession,
     answeredCount,
     isPracticeFeedbackVisible,
   } = useExamSession(parsedSetId, mode ?? "exam", questions);
@@ -75,6 +77,11 @@ export function ExamPage() {
   const canProceedPractice =
     isPracticeFeedbackVisible && (isLastQuestion || selectedAnswer !== null);
 
+  const exitToHome = useCallback(() => {
+    clearSession();
+    navigate("/");
+  }, [clearSession, navigate]);
+
   const handlePrimaryAction = () => {
     if (isExam) {
       if (isLastQuestion) {
@@ -97,13 +104,26 @@ export function ExamPage() {
     <div className="min-h-screen bg-slate-50">
       <TimerBar formatted={formatted} isLow={isLow} visible={isExam} />
 
+      <div className="border-b border-slate-200 bg-white px-4 py-3">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3">
+          <button
+            type="button"
+            onClick={() => setShowExitConfirm(true)}
+            className="inline-flex items-center gap-1 rounded-lg px-2 py-1 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-blue-600"
+          >
+            <span aria-hidden="true">←</span>
+            Laman Utama
+          </button>
+          <p className="text-sm text-slate-500">
+            Set {session.setId} • {isExam ? "Mod Peperiksaan" : "Mod Latihan"}
+          </p>
+        </div>
+      </div>
+
       <div className="mx-auto grid max-w-6xl gap-6 px-4 py-6 lg:grid-cols-[1fr_280px]">
         <div>
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
             <div className="flex-1">
-              <p className="text-sm text-slate-500">
-                Set {session.setId} • {isExam ? "Mod Peperiksaan" : "Mod Latihan"}
-              </p>
               <p className="font-medium text-slate-800">
                 Dijawab: {answeredCount}/{session.shuffledQuestions.length}
               </p>
@@ -149,6 +169,13 @@ export function ExamPage() {
           <div className="mt-6 flex flex-wrap gap-3">
             <button
               type="button"
+              onClick={() => setShowExitConfirm(true)}
+              className="rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
+            >
+              Keluar
+            </button>
+            <button
+              type="button"
               onClick={previousQuestion}
               disabled={session.currentIndex === 0}
               className="rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 disabled:opacity-40"
@@ -180,6 +207,35 @@ export function ExamPage() {
           onNavigate={goToQuestion}
         />
       </div>
+
+      {showExitConfirm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
+          <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl">
+            <h2 className="text-xl font-semibold text-slate-900">Kembali ke Laman Utama?</h2>
+            <p className="mt-2 text-slate-600">
+              {isExam
+                ? "Progres peperiksaan anda akan hilang dan masa akan ditamatkan."
+                : "Progres latihan anda akan hilang jika anda keluar sekarang."}
+            </p>
+            <div className="mt-6 flex gap-3">
+              <button
+                type="button"
+                onClick={() => setShowExitConfirm(false)}
+                className="flex-1 rounded-xl border border-slate-300 px-4 py-2 font-medium text-slate-700"
+              >
+                Teruskan
+              </button>
+              <button
+                type="button"
+                onClick={exitToHome}
+                className="flex-1 rounded-xl bg-slate-800 px-4 py-2 font-semibold text-white"
+              >
+                Keluar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {showSubmitConfirm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">

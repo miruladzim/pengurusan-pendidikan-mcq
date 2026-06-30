@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, Navigate, useLocation } from "react-router-dom";
+import { BackHomeLink } from "../components/BackHomeLink";
 import { ReviewPanel } from "../components/ReviewPanel";
 import type { ExamResult } from "../types/exam";
 import { saveAttempt } from "../utils/history";
@@ -30,6 +31,9 @@ export function ResultsPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
+      <div className="mb-4">
+        <BackHomeLink />
+      </div>
       <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
         <p className="text-sm font-semibold text-blue-600">Keputusan Peperiksaan</p>
         <h1 className="mt-2 text-3xl font-bold text-slate-900">
