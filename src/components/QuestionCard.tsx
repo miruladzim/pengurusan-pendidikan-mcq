@@ -1,4 +1,5 @@
 import type { OptionId, ShuffledQuestion } from "../types/exam";
+import { formatCognitiveLevel, formatDifficulty } from "../utils/labels";
 
 interface QuestionCardProps {
   question: ShuffledQuestion;
@@ -22,40 +23,46 @@ export function QuestionCard({
   const options = question.shuffledOptions;
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-slate-500">
-        <span className="rounded-full bg-slate-100 px-3 py-1 font-medium text-slate-700">
-          Soalan {index + 1} / {total}
+    <article className="card p-6 sm:p-8">
+      <div className="mb-5 flex flex-wrap items-center gap-2">
+        <span className="badge bg-slate-900 text-white">
+          Soalan {index + 1}/{total}
         </span>
-        <span className="rounded-full bg-blue-50 px-3 py-1 text-blue-700">
-          {question.topicName}
+        <span className="badge bg-brand-50 text-brand-700">{question.topicName}</span>
+        <span className="badge bg-amber-50 text-amber-800">
+          {formatDifficulty(question.difficulty)}
         </span>
-        <span className="rounded-full bg-amber-50 px-3 py-1 capitalize text-amber-700">
-          {question.difficulty}
+        <span className="badge bg-violet-50 text-violet-700">
+          {formatCognitiveLevel(question.cognitiveLevel)}
         </span>
       </div>
 
-      <p className="mb-6 text-lg leading-relaxed text-slate-900">{question.stem}</p>
+      <p className="mb-8 text-lg leading-relaxed font-medium text-slate-900 sm:text-xl">
+        {question.stem}
+      </p>
 
-      <div className="space-y-3">
+      <fieldset className="space-y-3" disabled={disabled || showFeedback}>
+        <legend className="sr-only">Pilihan jawapan</legend>
         {options.map((option) => {
           const isSelected = selectedOptionId === option.id;
           const isCorrect = option.id === question.correctOptionId;
-          let className =
-            "flex w-full items-start gap-3 rounded-xl border px-4 py-3 text-left transition";
+
+          let optionClass =
+            "group flex w-full cursor-pointer items-start gap-4 rounded-xl border-2 px-4 py-4 text-left transition ";
 
           if (showFeedback) {
             if (isCorrect) {
-              className += " border-green-300 bg-green-50 text-green-900";
+              optionClass += "border-emerald-400 bg-emerald-50 text-emerald-900";
             } else if (isSelected) {
-              className += " border-red-300 bg-red-50 text-red-900";
+              optionClass += "border-red-400 bg-red-50 text-red-900";
             } else {
-              className += " border-slate-200 bg-slate-50 text-slate-600";
+              optionClass += "border-slate-200 bg-slate-50 text-slate-500 opacity-70";
             }
           } else if (isSelected) {
-            className += " border-blue-500 bg-blue-50 text-blue-900";
+            optionClass += "border-brand-500 bg-brand-50 text-brand-900 shadow-sm";
           } else {
-            className += " border-slate-200 hover:border-blue-300 hover:bg-slate-50";
+            optionClass +=
+              "border-slate-200 bg-white hover:border-brand-300 hover:bg-brand-50/50";
           }
 
           return (
@@ -64,16 +71,28 @@ export function QuestionCard({
               type="button"
               disabled={disabled || showFeedback}
               onClick={() => onSelect(option.id)}
-              className={className}
+              className={optionClass}
+              aria-pressed={isSelected}
             >
-              <span className="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-current text-sm font-semibold">
+              <span
+                className={`mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border-2 text-sm font-bold transition ${
+                  isSelected
+                    ? "border-brand-600 bg-brand-600 text-white"
+                    : "border-slate-300 bg-white text-slate-600 group-hover:border-brand-400"
+                }`}
+              >
                 {option.id}
               </span>
-              <span className="flex-1">{option.text}</span>
+              <span className="flex-1 pt-0.5 leading-relaxed">{option.text}</span>
+              {showFeedback && isCorrect && (
+                <span className="text-emerald-600" aria-label="Jawapan betul">
+                  ✓
+                </span>
+              )}
             </button>
           );
         })}
-      </div>
-    </div>
+      </fieldset>
+    </article>
   );
 }

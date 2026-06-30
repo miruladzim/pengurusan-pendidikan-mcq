@@ -1,9 +1,133 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-900: #1e3a5f;
+  --color-surface: #ffffff;
+  --color-muted: #64748b;
+  --shadow-card: 0 1px 3px rgb(15 23 42 / 0.06), 0 8px 24px rgb(15 23 42 / 0.04);
+  --shadow-card-hover: 0 4px 12px rgb(37 99 235 / 0.12), 0 12px 32px rgb(15 23 42 / 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-  background-color: #f8fafc;
+  font-family: var(--font-sans);
   color: #0f172a;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgb(59 130 246 / 0.12), transparent),
+    linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgb(59 130 246 / 0.2);
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.35s ease-out both;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 1.5s ease-in-out infinite;
+}
+
+.card {
+  border-radius: 1rem;
+  border: 1px solid rgb(226 232 240);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.card-interactive {
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.card-interactive:hover {
+  border-color: rgb(147 197 253);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, opacity 0.15s;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--color-brand-600);
+  color: white;
+  padding: 0.625rem 1.25rem;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--color-brand-700);
+}
+
+.btn-secondary {
+  border: 1px solid rgb(203 213 225);
+  background: white;
+  color: #334155;
+  padding: 0.625rem 1.25rem;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #f8fafc;
+}
+
+.btn-success {
+  background: #059669;
+  color: white;
+  padding: 0.625rem 1.25rem;
+}
+
+.btn-success:hover:not(:disabled) {
+  background: #047857;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
 }

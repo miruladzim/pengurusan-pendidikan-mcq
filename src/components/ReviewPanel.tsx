@@ -1,4 +1,5 @@
 import type { ExamResult, OptionId } from "../types/exam";
+import { formatDifficulty } from "../utils/labels";
 
 interface ReviewPanelProps {
   result: ExamResult;
@@ -10,8 +11,7 @@ function getOptionText(
 ) {
   if (!optionId) return "Tidak dijawab";
   return (
-    question.shuffledOptions.find((option) => option.id === optionId)?.text ??
-    optionId
+    question.shuffledOptions.find((option) => option.id === optionId)?.text ?? optionId
   );
 }
 
@@ -26,41 +26,60 @@ export function ReviewPanel({ result }: ReviewPanelProps) {
         return (
           <div
             key={question.id}
-            className={`rounded-2xl border p-5 ${
+            className={`card overflow-hidden ${
               isUnanswered
-                ? "border-slate-200 bg-slate-50"
+                ? "border-slate-200"
                 : isCorrect
-                  ? "border-green-200 bg-green-50/40"
-                  : "border-red-200 bg-red-50/40"
+                  ? "border-emerald-200"
+                  : "border-red-200"
             }`}
           >
-            <div className="mb-3 flex flex-wrap gap-2 text-xs">
-              <span className="rounded-full bg-white px-2 py-1 font-medium text-slate-700">
-                Soalan {index + 1}
+            <div
+              className={`flex flex-wrap items-center gap-2 px-5 py-3 text-xs ${
+                isUnanswered
+                  ? "bg-slate-50"
+                  : isCorrect
+                    ? "bg-emerald-50"
+                    : "bg-red-50"
+              }`}
+            >
+              <span className="font-bold text-slate-800">Soalan {index + 1}</span>
+              <span className="badge bg-white text-slate-600">{question.topicName}</span>
+              <span className="badge bg-white text-slate-600">
+                {formatDifficulty(question.difficulty)}
               </span>
-              <span className="rounded-full bg-white px-2 py-1 text-slate-600">
-                {question.topicName}
-              </span>
-              <span className="rounded-full bg-white px-2 py-1 capitalize text-slate-600">
-                {question.difficulty}
+              <span
+                className={`ml-auto font-bold ${
+                  isUnanswered
+                    ? "text-slate-500"
+                    : isCorrect
+                      ? "text-emerald-700"
+                      : "text-red-700"
+                }`}
+              >
+                {isUnanswered ? "Tidak dijawab" : isCorrect ? "Betul" : "Salah"}
               </span>
             </div>
 
-            <p className="mb-4 font-medium text-slate-900">{question.stem}</p>
+            <div className="p-5">
+              <p className="mb-4 font-medium leading-relaxed text-slate-900">{question.stem}</p>
 
-            <div className="space-y-2 text-sm">
-              <p>
-                <span className="font-semibold">Jawapan anda: </span>
-                {getOptionText(question, selected)}
-              </p>
-              <p>
-                <span className="font-semibold">Jawapan betul: </span>
-                {getOptionText(question, question.correctOptionId)}
-              </p>
-              <p className="rounded-lg bg-white/80 p-3 text-slate-700">
-                <span className="font-semibold">Penjelasan: </span>
-                {question.explanation}
-              </p>
+              <div className="space-y-2 text-sm">
+                <p className="rounded-lg bg-slate-50 px-3 py-2">
+                  <span className="font-semibold text-slate-700">Jawapan anda: </span>
+                  {getOptionText(question, selected)}
+                </p>
+                {!isCorrect && (
+                  <p className="rounded-lg bg-emerald-50 px-3 py-2 text-emerald-900">
+                    <span className="font-semibold">Jawapan betul: </span>
+                    {getOptionText(question, question.correctOptionId)}
+                  </p>
+                )}
+                <p className="rounded-lg border border-slate-100 bg-white px-3 py-2 text-slate-700">
+                  <span className="font-semibold">Penjelasan: </span>
+                  {question.explanation}
+                </p>
+              </div>
             </div>
           </div>
         );

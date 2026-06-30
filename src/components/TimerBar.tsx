@@ -11,13 +11,17 @@ export function TimerBar({ formatted, isLow, visible }: TimerBarProps) {
 
   return (
     <div
-      className={`sticky top-0 z-20 border-b px-4 py-3 text-center text-lg font-semibold ${
+      className={`flex items-center justify-center gap-2 border-b px-4 py-2.5 text-center font-mono text-base font-bold tracking-wide ${
         isLow
-          ? "border-red-200 bg-red-50 text-red-700"
-          : "border-slate-200 bg-white text-slate-800"
+          ? "animate-pulse-soft border-red-300 bg-red-600 text-white"
+          : "border-brand-200 bg-brand-600 text-white"
       }`}
+      role="timer"
+      aria-live="polite"
+      aria-label={`Masa baki ${formatted}`}
     >
-      Masa Baki: {formatted || formatTimer(0)}
+      <span aria-hidden="true">⏱</span>
+      <span>Masa Baki: {formatted || formatTimer(0)}</span>
     </div>
   );
 }

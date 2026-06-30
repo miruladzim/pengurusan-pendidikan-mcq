@@ -8,16 +8,18 @@ interface PracticeFeedbackProps {
 export function PracticeFeedback({ question, isCorrect }: PracticeFeedbackProps) {
   return (
     <div
-      className={`mt-4 rounded-xl border p-4 ${
+      className={`animate-fade-in mt-4 rounded-xl border-l-4 p-5 ${
         isCorrect
-          ? "border-green-200 bg-green-50 text-green-900"
-          : "border-amber-200 bg-amber-50 text-amber-900"
+          ? "border-emerald-500 bg-emerald-50 text-emerald-900"
+          : "border-amber-500 bg-amber-50 text-amber-900"
       }`}
+      role="status"
     >
-      <p className="mb-2 font-semibold">
-        {isCorrect ? "Jawapan betul!" : "Jawapan tidak tepat."}
+      <p className="flex items-center gap-2 font-bold">
+        <span aria-hidden="true">{isCorrect ? "✓" : "✗"}</span>
+        {isCorrect ? "Jawapan betul!" : "Jawapan tidak tepat"}
       </p>
-      <p className="text-sm leading-relaxed">{question.explanation}</p>
+      <p className="mt-2 text-sm leading-relaxed">{question.explanation}</p>
     </div>
   );
 }
