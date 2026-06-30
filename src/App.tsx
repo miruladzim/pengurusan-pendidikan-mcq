@@ -4,9 +4,11 @@ import { ExamPage } from "./pages/ExamPage";
 import { HomePage } from "./pages/HomePage";
 import { ResultsPage } from "./pages/ResultsPage";
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename || undefined}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/intro/:setId/:mode" element={<ExamIntroPage />} />

@@ -21,6 +21,12 @@ npm run dev
 
 Buka URL yang dipaparkan (biasanya `http://localhost:5173`).
 
+## Terbitan Langsung (GitHub Pages)
+
+**URL langsung:** https://miruladzim.github.io/pengurusan-pendidikan-mcq/
+
+Setiap push ke `master` akan membina semula dan menerbitkan laman web secara automatik melalui GitHub Actions.
+
 ## Bina untuk Pengeluaran
 
 ```bash
