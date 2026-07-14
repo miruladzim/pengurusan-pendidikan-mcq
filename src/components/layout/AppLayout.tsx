@@ -1,6 +1,9 @@
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "../ui/ThemeToggle";
+import { LanguageToggle } from "../ui/LanguageToggle";
+import { useLanguage } from "../../hooks/useLanguage";
+import { SUBJECT_NAME } from "../../utils/language";
 
 interface AppLayoutProps {
   children: ReactNode;
@@ -23,6 +26,8 @@ export function AppLayout({
   showHeader = true,
   className = "",
 }: AppLayoutProps) {
+  const { language } = useLanguage();
+
   return (
     <div className={`min-h-screen ${className}`}>
       {showHeader && (
@@ -33,14 +38,15 @@ export function AppLayout({
                 MCQ
               </span>
               <div>
-                <p className="text-sm font-bold text-slate-900 leading-tight dark:text-white">HPGD2203</p>
-                <p className="text-xs text-slate-500 dark:text-slate-400">Pengurusan Pendidikan</p>
+                <p className="text-base font-bold text-slate-900 leading-tight dark:text-white">HPGD2203</p>
+                <p className="text-sm text-slate-500 dark:text-slate-400">{SUBJECT_NAME[language]}</p>
               </div>
             </Link>
             <div className="flex items-center gap-3">
               <p className="hidden text-xs font-medium text-slate-500 sm:block dark:text-slate-400">
                 Open University Malaysia
               </p>
+              <LanguageToggle />
               <ThemeToggle />
             </div>
           </div>

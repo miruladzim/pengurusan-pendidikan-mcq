@@ -4,6 +4,8 @@ import { AppLayout } from "../components/layout/AppLayout";
 import type { ExamMode } from "../types/exam";
 import { TOPICS } from "../data/topics";
 import { loadAttemptHistory } from "../utils/history";
+import { useLanguage } from "../hooks/useLanguage";
+import { SUBJECT_NAME } from "../utils/language";
 
 const SET_COLORS = [
   "from-blue-500 to-blue-600",
@@ -14,6 +16,7 @@ const SET_COLORS = [
 export function HomePage() {
   const [mode, setMode] = useState<ExamMode>("exam");
   const history = useMemo(() => loadAttemptHistory(), []);
+  const { language } = useLanguage();
 
   return (
     <AppLayout>
@@ -31,8 +34,8 @@ export function HomePage() {
             <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
               Peperiksaan Mock MCQ
             </h1>
-            <p className="mt-1 text-lg font-medium text-slate-600 dark:text-slate-400">
-              HPGD2203 — Pengurusan Pendidikan
+            <p className="mt-1 text-xl font-semibold text-slate-700 dark:text-slate-300 sm:text-2xl">
+              HPGD2203 — {SUBJECT_NAME[language]}
             </p>
             <p className="mt-4 max-w-2xl text-slate-600 leading-relaxed dark:text-slate-400">
               Bersedia untuk peperiksaan sebenar dengan 3 set soalan berdasarkan modul kursus.
