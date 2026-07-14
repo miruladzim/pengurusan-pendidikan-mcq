@@ -12,12 +12,12 @@ export function ProgressBar({ value, max, label, showPercent = false }: Progress
     <div>
       {(label || showPercent) && (
         <div className="mb-1.5 flex items-center justify-between text-sm">
-          {label && <span className="font-medium text-slate-700">{label}</span>}
-          {showPercent && <span className="text-slate-500">{percent}%</span>}
+          {label && <span className="font-medium text-slate-700 dark:text-slate-300">{label}</span>}
+          {showPercent && <span className="text-slate-500 dark:text-slate-400">{percent}%</span>}
         </div>
       )}
       <div
-        className="h-2.5 overflow-hidden rounded-full bg-slate-200"
+        className="h-2.5 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800"
         role="progressbar"
         aria-valuenow={value}
         aria-valuemin={0}

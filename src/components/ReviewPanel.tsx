@@ -28,33 +28,35 @@ export function ReviewPanel({ result }: ReviewPanelProps) {
             key={question.id}
             className={`card overflow-hidden ${
               isUnanswered
-                ? "border-slate-200"
+                ? "border-slate-200 dark:border-slate-700"
                 : isCorrect
-                  ? "border-emerald-200"
-                  : "border-red-200"
+                  ? "border-emerald-200 dark:border-emerald-800"
+                  : "border-red-200 dark:border-red-800"
             }`}
           >
             <div
               className={`flex flex-wrap items-center gap-2 px-5 py-3 text-xs ${
                 isUnanswered
-                  ? "bg-slate-50"
+                  ? "bg-slate-50 dark:bg-slate-800/60"
                   : isCorrect
-                    ? "bg-emerald-50"
-                    : "bg-red-50"
+                    ? "bg-emerald-50 dark:bg-emerald-900/20"
+                    : "bg-red-50 dark:bg-red-900/20"
               }`}
             >
-              <span className="font-bold text-slate-800">Soalan {index + 1}</span>
-              <span className="badge bg-white text-slate-600">{question.topicName}</span>
-              <span className="badge bg-white text-slate-600">
+              <span className="font-bold text-slate-800 dark:text-slate-200">Soalan {index + 1}</span>
+              <span className="badge bg-white text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+                {question.topicName}
+              </span>
+              <span className="badge bg-white text-slate-600 dark:bg-slate-800 dark:text-slate-300">
                 {formatDifficulty(question.difficulty)}
               </span>
               <span
                 className={`ml-auto font-bold ${
                   isUnanswered
-                    ? "text-slate-500"
+                    ? "text-slate-500 dark:text-slate-400"
                     : isCorrect
-                      ? "text-emerald-700"
-                      : "text-red-700"
+                      ? "text-emerald-700 dark:text-emerald-400"
+                      : "text-red-700 dark:text-red-400"
                 }`}
               >
                 {isUnanswered ? "Tidak dijawab" : isCorrect ? "Betul" : "Salah"}
@@ -62,20 +64,24 @@ export function ReviewPanel({ result }: ReviewPanelProps) {
             </div>
 
             <div className="p-5">
-              <p className="mb-4 font-medium leading-relaxed text-slate-900">{question.stem}</p>
+              <p className="mb-4 font-medium leading-relaxed text-slate-900 dark:text-white">
+                {question.stem}
+              </p>
 
               <div className="space-y-2 text-sm">
-                <p className="rounded-lg bg-slate-50 px-3 py-2">
-                  <span className="font-semibold text-slate-700">Jawapan anda: </span>
+                <p className="rounded-lg bg-slate-50 px-3 py-2 dark:bg-slate-800/60 dark:text-slate-300">
+                  <span className="font-semibold text-slate-700 dark:text-slate-200">
+                    Jawapan anda:{" "}
+                  </span>
                   {getOptionText(question, selected)}
                 </p>
                 {!isCorrect && (
-                  <p className="rounded-lg bg-emerald-50 px-3 py-2 text-emerald-900">
+                  <p className="rounded-lg bg-emerald-50 px-3 py-2 text-emerald-900 dark:bg-emerald-900/20 dark:text-emerald-200">
                     <span className="font-semibold">Jawapan betul: </span>
                     {getOptionText(question, question.correctOptionId)}
                   </p>
                 )}
-                <p className="rounded-lg border border-slate-100 bg-white px-3 py-2 text-slate-700">
+                <p className="rounded-lg border border-slate-100 bg-white px-3 py-2 text-slate-700 dark:border-slate-700 dark:bg-slate-800/40 dark:text-slate-300">
                   <span className="font-semibold">Penjelasan: </span>
                   {question.explanation}
                 </p>

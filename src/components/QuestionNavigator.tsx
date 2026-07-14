@@ -21,8 +21,8 @@ export function QuestionNavigator({
   return (
     <aside className="card p-4 lg:sticky lg:top-4 lg:self-start">
       <div className="mb-3 flex items-center justify-between">
-        <h3 className="text-sm font-bold text-slate-800">Navigasi</h3>
-        <span className="text-xs text-slate-500">
+        <h3 className="text-sm font-bold text-slate-800 dark:text-slate-200">Navigasi</h3>
+        <span className="text-xs text-slate-500 dark:text-slate-400">
           {answered}/{total}
         </span>
       </div>
@@ -42,10 +42,10 @@ export function QuestionNavigator({
               aria-current={isCurrent ? "true" : undefined}
               className={`flex h-9 items-center justify-center rounded-lg text-xs font-bold transition ${
                 isCurrent
-                  ? "bg-brand-600 text-white shadow-md ring-2 ring-brand-300"
+                  ? "bg-brand-600 text-white shadow-md ring-2 ring-brand-300 dark:ring-brand-500/40"
                   : isAnswered
-                    ? "bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
-                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                    ? "bg-emerald-100 text-emerald-800 hover:bg-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-300 dark:hover:bg-emerald-900/50"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700"
               }`}
             >
               {index + 1}
@@ -54,17 +54,17 @@ export function QuestionNavigator({
         })}
       </div>
 
-      <div className="space-y-1.5 border-t border-slate-100 pt-3 text-xs text-slate-500">
+      <div className="space-y-1.5 border-t border-slate-100 pt-3 text-xs text-slate-500 dark:border-slate-800 dark:text-slate-400">
         <div className="flex items-center gap-2">
           <span className="h-3 w-3 rounded bg-brand-600" />
           Semasa
         </div>
         <div className="flex items-center gap-2">
-          <span className="h-3 w-3 rounded bg-emerald-100 ring-1 ring-emerald-300" />
+          <span className="h-3 w-3 rounded bg-emerald-100 ring-1 ring-emerald-300 dark:bg-emerald-900/30 dark:ring-emerald-700" />
           Dijawab ({answered})
         </div>
         <div className="flex items-center gap-2">
-          <span className="h-3 w-3 rounded bg-slate-100 ring-1 ring-slate-300" />
+          <span className="h-3 w-3 rounded bg-slate-100 ring-1 ring-slate-300 dark:bg-slate-800 dark:ring-slate-600" />
           Belum ({unanswered})
         </div>
       </div>

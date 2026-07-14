@@ -47,12 +47,12 @@ export function ExamIntroPage() {
           </div>
 
           <div className="p-8">
-            <h2 className="mb-4 text-sm font-bold uppercase tracking-wide text-slate-500">
+            <h2 className="mb-4 text-sm font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">
               Maklumat Peperiksaan
             </h2>
             <ul className="space-y-3">
               {rules.map((rule) => (
-                <li key={rule.text} className="flex items-start gap-3 text-slate-700">
+                <li key={rule.text} className="flex items-start gap-3 text-slate-700 dark:text-slate-300">
                   <span className="text-lg" aria-hidden="true">
                     {rule.icon}
                   </span>
@@ -62,7 +62,7 @@ export function ExamIntroPage() {
             </ul>
 
             {isExam && (
-              <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+              <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900 dark:border-amber-900/50 dark:bg-amber-900/20 dark:text-amber-200">
                 <strong>Penting:</strong> Pemasa 60 minit bermula sebaik sahaja anda menekan Mula.
                 Peperiksaan akan dihantar secara automatik apabila masa tamat.
               </div>

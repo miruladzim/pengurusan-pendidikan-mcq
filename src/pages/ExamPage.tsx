@@ -6,6 +6,7 @@ import { QuestionNavigator } from "../components/QuestionNavigator";
 import { TimerBar } from "../components/TimerBar";
 import { ProgressBar } from "../components/ui/ProgressBar";
 import { Modal } from "../components/ui/Modal";
+import { ThemeToggle } from "../components/ui/ThemeToggle";
 import { getExamSet } from "../data/examSets";
 import { useBeforeUnloadWarning, useExamTimer } from "../hooks/useExamTimer";
 import { useExamSession } from "../hooks/useExamSession";
@@ -171,10 +172,10 @@ export function ExamPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50/80">
+    <div className="min-h-screen bg-slate-50/80 dark:bg-slate-950">
       <TimerBar formatted={formatted} isLow={isLow} visible={isExam} />
 
-      <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur-md">
+      <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/90">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
           <button
             type="button"
@@ -184,21 +185,24 @@ export function ExamPage() {
             ← Keluar
           </button>
           <div className="text-center">
-            <p className="text-sm font-bold text-slate-900">Set {session.setId}</p>
-            <p className="text-xs text-slate-500">
+            <p className="text-sm font-bold text-slate-900 dark:text-white">Set {session.setId}</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400">
               {isExam ? "Mod Peperiksaan" : "Mod Latihan"}
             </p>
           </div>
           {isExam ? (
-            <button
-              type="button"
-              onClick={() => setShowSubmitConfirm(true)}
-              className="btn btn-success px-3 py-2 text-sm"
-            >
-              Hantar
-            </button>
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <button
+                type="button"
+                onClick={() => setShowSubmitConfirm(true)}
+                className="btn btn-success px-3 py-2 text-sm"
+              >
+                Hantar
+              </button>
+            </div>
           ) : (
-            <div className="w-16" aria-hidden="true" />
+            <ThemeToggle />
           )}
         </div>
       </header>
@@ -212,7 +216,7 @@ export function ExamPage() {
             showPercent
           />
           {!isExam && (
-            <p className="mt-2 text-center text-sm text-slate-500">
+            <p className="mt-2 text-center text-sm text-slate-500 dark:text-slate-400">
               Soalan {session.currentIndex + 1} daripada {session.shuffledQuestions.length}
             </p>
           )}
@@ -234,7 +238,7 @@ export function ExamPage() {
               <PracticeFeedback question={currentQuestion} isCorrect={isCorrect} />
             )}
 
-            <p className="mt-4 hidden text-center text-xs text-slate-400 sm:block">
+            <p className="mt-4 hidden text-center text-xs text-slate-400 sm:block dark:text-slate-500">
               Pintasan: A–D atau 1–4 untuk jawapan · ← → untuk navigasi
             </p>
           </div>
@@ -249,7 +253,7 @@ export function ExamPage() {
         </div>
       </div>
 
-      <div className="sticky bottom-0 z-20 border-t border-slate-200 bg-white/95 px-4 py-3 backdrop-blur-md sm:static sm:border-0 sm:bg-transparent sm:py-0">
+      <div className="sticky bottom-0 z-20 border-t border-slate-200 bg-white/95 px-4 py-3 backdrop-blur-md sm:static sm:border-0 sm:bg-transparent sm:py-0 dark:border-slate-800 dark:bg-slate-900/95">
         <div className="mx-auto flex max-w-6xl gap-3">
           <button
             type="button"

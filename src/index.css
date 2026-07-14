@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --color-brand-50: #eff6ff;
@@ -31,6 +33,14 @@ body {
     radial-gradient(ellipse 80% 50% at 50% -20%, rgb(59 130 246 / 0.12), transparent),
     linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dark body {
+  color: #e2e8f0;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgb(59 130 246 / 0.1), transparent),
+    linear-gradient(180deg, #0f172a 0%, #0b1220 100%);
 }
 
 :focus-visible {
@@ -65,6 +75,12 @@ body {
   border: 1px solid rgb(226 232 240);
   background: var(--color-surface);
   box-shadow: var(--shadow-card);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.dark .card {
+  border-color: rgb(51 65 85);
+  background: #1e293b;
 }
 
 .card-interactive {
@@ -75,6 +91,10 @@ body {
   border-color: rgb(147 197 253);
   box-shadow: var(--shadow-card-hover);
   transform: translateY(-2px);
+}
+
+.dark .card-interactive:hover {
+  border-color: rgb(59 130 246 / 0.5);
 }
 
 .btn {
@@ -111,6 +131,16 @@ body {
 
 .btn-secondary:hover:not(:disabled) {
   background: #f8fafc;
+}
+
+.dark .btn-secondary {
+  border-color: rgb(71 85 105);
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+.dark .btn-secondary:hover:not(:disabled) {
+  background: #334155;
 }
 
 .btn-success {
