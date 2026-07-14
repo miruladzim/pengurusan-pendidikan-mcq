@@ -25,7 +25,7 @@ export function HomePage() {
                 Open University Malaysia
               </p>
               <span className="badge bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300">
-                Versi Percubaan (Percuma)
+                Versi Percubaan
               </span>
             </div>
             <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
